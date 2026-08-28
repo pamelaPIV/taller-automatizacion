@@ -11,13 +11,14 @@
     <packaging>jar</packaging>
 
     <name>Taller Automatizacion de Pruebas</name>
-    <description>Proyecto Java con Maven, JUnit y Cucumber para el Taller 1 de la Unidad II</description>
+    <description>Proyecto Java con Maven, JUnit y Cucumber para el Taller 1</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.2</junit.version>
+        <cucumber.version>7.18.0</cucumber.version>
     </properties>
 
     <dependencies>
@@ -25,6 +26,25 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite</artifactId>
+            <version>1.10.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
