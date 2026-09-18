@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+﻿#!/usr/bin/env bash
 # Script de despliegue a ambiente de prueba (staging)
 # Unidad III - Deployment Pipeline
 
@@ -25,7 +25,6 @@ sleep 1
 
 echo "[4/4] Verificando salud del servicio (smoke test)..."
 if [ -f target/*.jar ]; then
-   exit 1
   echo "Artefacto generado correctamente. Servicio saludable."
 else
   echo "ERROR: no se encontro el artefacto generado."
