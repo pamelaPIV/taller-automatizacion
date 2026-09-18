@@ -25,6 +25,7 @@ sleep 1
 
 echo "[4/4] Verificando salud del servicio (smoke test)..."
 if [ -f target/*.jar ]; then
+   exit 1
   echo "Artefacto generado correctamente. Servicio saludable."
 else
   echo "ERROR: no se encontro el artefacto generado."
